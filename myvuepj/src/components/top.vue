@@ -141,6 +141,9 @@ export default{
         }
     },
     components : {
+    },
+    mounted(){
+        
     }
 
 }
