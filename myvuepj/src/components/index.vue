@@ -483,22 +483,6 @@ export default {
     sc2div.html(hcode2);
 
 
-    function 메인1페이지기능구현해보고싶었던거(){
-        
-        // 첫번째 줄의 첫번째 span의 넓이구하기
-        let qwe = sc1div.find('span').eq(0)
-        let qwew = qwe.width()
-        console.log(qwe,qwew)
-        
-        // 첫번째 줄의 마지막 span의 넓이구하기
-        let ewq = sc1div.find('span').eq(by.length - 1)
-        let rewq = ewq.width()
-        
-        // console.log(ewq,rewq)
-    }
-    // 미완 /////////////////////////////
-
-
     // 흘러가는 글씨~ // 
     // 합칠부분 많음
     function setFlowBanner(){
