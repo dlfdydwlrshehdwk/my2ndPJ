@@ -1,26 +1,60 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Top/>
+  <Index/>
+  <Info/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Top from './components/top.vue';
+import Info from './components/info.vue';
+import Index from './components/index.vue';
+// import $ from 'jquery';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Top : Top,
+    Info : Info,
+    Index : Index,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* 폰트 */
+@font-face {
+    font-family: asd;
+    src: url(../src/assets/font/CircularStd-Book.1f2c8f7.woff2);
 }
+@font-face{
+    font-family: sdf;
+    src: url(../src/assets/font/Hatton-Light.a83de3f.woff2);
+}
+@font-face{
+    font-family: dfg;
+    src: url(../src/assets/font/Hatton-Regular.9256132.woff2);
+}
+html{
+    font-size: 1vw
+}
+html, body,ul{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,li,p,dl,dt,dd{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* 파랑글씨 클래스 */
+.blue{
+    color : #5e8cff;
+    font-weight: bold;
+}
+
 </style>

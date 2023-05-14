@@ -1,0 +1,18 @@
+html{
+    font-size: 1vw
+}
+html, body,ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+body a{
+    text-decoration: none;
+    color: #000;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,li,p,dl,dt,dd{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
