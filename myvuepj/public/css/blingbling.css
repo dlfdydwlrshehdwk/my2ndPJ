@@ -13,19 +13,12 @@ body{
     padding: 0;
     font-family: 'Cormorant Garamond', serif;
 }
-.wrap{
-    /* position: relative; */
-    /* height: 100vh; */
-}
-.bg{
-    /* height: 100%; */
-}
 .wrap ul{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* gap : 4rem 0; */
+    z-index: 1424;
 }
 .bg ul>li{
     position: relative;
@@ -43,8 +36,6 @@ body{
     background: url(../img/kmk.jpg) repeat-y;
     background-clip: text;
     -webkit-background-clip: text;
-    /* -webkit-transform: translate3d(0,0,0); */
-    /* -webkit-backface-visibility: hidden; */
     -webkit-animation: aitf 4s linear infinite;
 }
 @-webkit-keyframes aitf {
@@ -53,10 +44,6 @@ body{
 }
 .bg ul>li a:hover{
     -webkit-text-fill-color: transparent;
-}
-
-.pr {
-    
 }
 .pr img{
     width: 100%;
@@ -68,7 +55,6 @@ body{
     transform: scale(1.1);
 }
 .pr li >div{
-    /* position: absolute; */
     position: relative;
     overflow: hidden;
     text-align: center;

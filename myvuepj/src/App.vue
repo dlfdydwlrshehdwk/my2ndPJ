@@ -1,21 +1,21 @@
 <template>
   <Top/>
-  <Index/>
+  <!-- <Index/> -->
+  <router-view></router-view>
   <Info/>
+
+
 </template>
 
 <script>
 import Top from './components/top.vue';
 import Info from './components/info.vue';
-import Index from './components/index.vue';
-// import $ from 'jquery';
 
 export default {
   name: 'App',
   components: {
     Top : Top,
     Info : Info,
-    Index : Index,
   }
 }
 </script>

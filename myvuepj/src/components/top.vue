@@ -84,7 +84,7 @@
                 <div class="navlist">
                     <ul>
                         <li class="white">
-                            <a href="project.html">Project</a>
+                            <a href="#"><router-link to="/project">Project</router-link></a>
                         </li>
                         <li class="white">
                             <a href="#">Contact</a>
@@ -100,7 +100,7 @@
             </nav>
         </header>
     </div>
-    <div class="loginbg">
+    <!-- <div class="loginbg">
         <div class="loginwrap">
             <div class="login_logo">
                 <img src="../assets/img/favi.jpg" alt="">
@@ -128,7 +128,7 @@
                 <span><a href="">회원가입</a></span>
             </div>
         </div>
-    </div>
+    </div> -->
     
     
 </template>
@@ -142,9 +142,15 @@ export default{
     },
     components : {
     },
-    mounted(){
-        
-    }
+    mounted:function(){
+        $('.navlist ul').find('li').eq(2).click(()=>{
+        console.log('로그인')
+        $('.loginbg').fadeIn()
+        })
+        $('.close').click(function(){
+            $('.loginbg').fadeOut()
+        })
+        }
 
 }
 </script>
